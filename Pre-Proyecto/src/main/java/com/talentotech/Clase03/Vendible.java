@@ -1,4 +1,4 @@
-package com.talentotech;
+package com.talentotech.Clase03;
 
 // INTERFAZ:
 public interface Vendible {
