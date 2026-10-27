@@ -1,7 +1,7 @@
 package com.talentotech.Clase03;
 
 // HERENCIA: Ropa es una subclase de Producto.
-public class Ropa extends Producto{
+public class Ropa extends Producto implements Vendible, Etiquetable{
 
 	private String talle;
 
@@ -15,4 +15,16 @@ public class Ropa extends Producto{
 	public String getCategoria() {
 		return "Ropa";
 	}
+
+	// CLASE 05 - Implementamos los metodos faltantes de las interfaces:
+	@Override
+    public void aplicarDescuento(double porcentaje) {
+        System.out.println("Aplicando " + porcentaje + "%" + " de descuento a " + getNombre());
+    }
+
+    @Override
+    public void generarEtiqueta() {
+        System.out.println("Etiqueta : " + getNombre() + " - Talle " + talle);
+    }
+
 }
