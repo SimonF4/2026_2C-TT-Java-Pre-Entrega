@@ -1,7 +1,7 @@
 package com.talentotech.Clase03;
 
-public class Etiquetable {
 
-	
-	
+// CLASE 05: Se creo y completo las interfaces Vendible y Etiquetable.
+public interface Etiquetable {
+
 }
